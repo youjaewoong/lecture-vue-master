@@ -12,6 +12,7 @@ ResultView.setup = function (el) {
   this.init(el)
 }
 
+//데이터를 받아서 처리한다.
 ResultView.render = function (data = []) {
   console.log(tag, 'render()', data)
   this.el.innerHTML = data.length ? this.getSearchResultsHtml(data) : this.messages.NO_RESULT
