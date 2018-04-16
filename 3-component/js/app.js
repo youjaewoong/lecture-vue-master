@@ -23,12 +23,10 @@ new Vue({
     this.fetchHistory()
   },
   methods: {
-    onSubmit(e) {
+    onSubmit(query) {
+      this.query = query
       this.search()
-    },
-    onKeyup(e) {
-      if (!this.query.length) this.resetForm()
-    },
+    }
     onReset(e) {
       this.resetForm()
     },
