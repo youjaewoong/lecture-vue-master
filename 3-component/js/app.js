@@ -26,7 +26,7 @@ new Vue({
     onSubmit(query) {
       this.query = query
       this.search()
-    }
+    },
     onReset(e) {
       this.resetForm()
     },

@@ -11,7 +11,7 @@ export default {
       this.$emit('@submit', this.inputValue.trim())
     },
     onKeyup(){
-      if (!this.inputValue.length) this.resetForm()
+      if (!this.inputValue.length) this.onReset()
     },
     onReset(){
       this.inputValue = ''
